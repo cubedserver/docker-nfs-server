@@ -6,10 +6,8 @@ A handy NFS Server image comprising Alpine Linux and NFS v4 only, over TCP on po
 
 The image comprises of;
 
-- [Alpine Linux](http://www.alpinelinux.org/). Alpine Linux is a security-oriented, lightweight Linux distribution based on [musl libc](https://www.musl-libc.org/) and [BusyBox](https://www.busybox.net/).
+- [Alpine Linux](http://www.alpinelinux.org/).
 - NFS v4 only, over TCP on port 2049. Rpcbind is enabled for now to overcome a bug with slow startup, it shouldn't be required.
-
-[Confd](https://www.confd.io/) is no longer used, making the image simpler & smaller and providing wider device compatibility.
 
 For ARM versions, tag 6-arm is based on [hypriot/rpi-alpine](https://github.com/hypriot/rpi-alpine) and tag 7 onwards based on the stock Alpine image. Tag 7 uses confd v0.16.0.
 
